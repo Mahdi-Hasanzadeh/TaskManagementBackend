@@ -20,7 +20,10 @@ connectDB();
 app.use(express.json());
 app.use(
   cors({
-    origin: ["http://localhost:3000"],
+    origin: [
+      "http://localhost:3000",
+      "https://task-management-system-local.netlify.app",
+    ],
   })
 );
 app.use(express.urlencoded({ extended: true }));
